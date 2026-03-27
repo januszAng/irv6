@@ -11,13 +11,10 @@ import {
 import { fileURLToPath } from "node:url";
 import path, { dirname } from "node:path";
 import App from "./App.js";
-import { log } from "node:console";
 
 // Create __dirname equivalent for ES modules
 const __filename = fileURLToPath(import.meta.url);
-log("Current file path:", __filename);
 const __dirname = dirname(__filename);
-log("Current directory path:", __dirname);
 const distPath = path.join(__dirname, "dist");
 const ih = "index.html";
 
